@@ -1,0 +1,40 @@
+*{
+   margin:0;
+   padding: 0;
+   background-color: navy;
+
+} 
+.circle{
+   
+   border-radius: 50%;
+   height: 100PX;
+   width: 100px;
+   margin: 300px 0 0 500px;
+   border:20px solid silver;
+   border-top: 20px solid black;
+   animation-name: rounding;
+   animation-duration: 4s;
+   animation-iteration-count: 5;
+   /* animation-timing-function:steps(6); */
+   animation-delay: 3s;
+   position: relative;
+}
+@keyframes rounding {
+0%{
+     transform: rotate(0deg);left: 0px;top: 0px;
+                             
+    }
+    25%{
+   left: 200px; top: 0px;
+    }
+    50%{
+      left: 200px;top: 200px;
+    }
+    75%{
+      left: 0px;top: 200px;
+    }
+   100%{
+      transform: rotate(360deg);left: 0px;top: 0px;
+   }
+   
+}

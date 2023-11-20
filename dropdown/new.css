@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.dropdown{
+
+}
+.navbar{
+    position: relative;
+    display:flex;
+}
+.navbar li {
+    list-style: none;
+    padding: 5px;
+     
+}
+.links{
+    position: absolute;
+    display: none;
+}
+.drop1:hover .links{
+    display: block;
+}
+.links-2{
+    display: none;
+}
+ .drop2:hover .links-2{
+    display: block;
+ }
+ a{
+    text-decoration: none;
+ }
+ .drop1 i{
+    color: rgb(14, 137, 244);position:relative;bottom:2px;
+ }

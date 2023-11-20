@@ -1,0 +1,101 @@
+
+ /* box madhe set karnyasathi text overflow cha use kela jato */
+.overflow{
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    border: 2px solid black;
+    overflow:auto;
+   
+}
+/* input box madhe text overflow hot ashel tr set karta yetay */
+.text-overflow{   
+    width: 200px;
+    height: 20px;
+    background-color: antiquewhite;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* box madhe long word ashel tr eka line madhe ghyayla yetay */
+.word-break{
+    height: 200px;
+    width: 200px;
+    word-wrap: break-word;
+    background-color: antiquewhite;
+}
+input{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.search{
+    height: 50px;
+    width: 50px;
+     border:5px solid rgba(0, 0, 0, 0.176);
+    border-radius: 50%;
+    border-top-color:rgba(0, 0, 255, 0.701);
+    animation-name:rotate;
+    animation-duration:2.5s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    margin:auto;
+    
+
+}
+@keyframes rotate{
+
+    to{ rotate: 360deg;}
+}
+.style{
+    height: 200px;
+    width: 200px;
+     
+    background: linear-gradient(red, blue,pink,yellow ,green);
+    border-radius: 50%;
+    border-image: url("sri krishn.jpg"); 
+    animation-name: linear;
+    animation-duration:2.5s;
+    animation-timing-function:linear;
+    animation-delay:0s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+.image{
+    position: relative;
+    bottom: 190px;
+    left: 133px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-image: url("/sri krishn.jpg");
+    background-size: cover;
+    animation-name:opacity;
+    animation-duration: 10s;
+}
+@keyframes linear{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
