@@ -1,0 +1,11 @@
+<p>databinding works!</p>
+
+<input type="text" [(ngModel)]="name">
+<button (click)="myName(name)">click</button>
+<div> your name is :{{fname}}</div>
+
+<p>or</p>
+
+<input type="text"#id (input)="id.value" placeholder="enter your name" >
+<button (click)="fullName(id.value)">click</button>
+<div> your name :{{newName}}</div>  
