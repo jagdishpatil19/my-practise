@@ -1,0 +1,11 @@
+<p>loops works!</p>
+ <h3 *ngFor="let items of names">this is my friend -{{items}}</h3>
+ <h3 *ngFor="let items of friendsDetles">{{items.name}}--{{items.age}}</h3>
+
+  <ul *ngFor="let n of arr">
+<li>{{n.name}}</li>
+<li>{{n.age}}</li>
+<ul *ngFor="let account of n.socialAccount">
+    <li>{{account}}</li>
+</ul>
+  </ul>

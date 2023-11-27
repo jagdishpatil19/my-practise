@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { OtherPractiseComponent } from './other-practise/other-practise.component';
+import { IfElseComponent } from './if-else/if-else.component';
+import { LoopsComponent } from './loops/loops.component';
+ 
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { OtherPractiseComponent } from './other-practise/other-practise.componen
     MainPageComponent,
     LoginComponent,
     DatabindingComponent,
-    OtherPractiseComponent
+    OtherPractiseComponent,
+    IfElseComponent,
+    LoopsComponent,
+   
   ],
   imports: [
     BrowserModule,

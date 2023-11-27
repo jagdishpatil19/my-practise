@@ -11,4 +11,10 @@ constructor(private router:Router){}
   login(){
 this.router.navigateByUrl("login")
   }
+  ifElse(){
+    this.router.navigateByUrl('ifElse')
+  }
+  loop(){
+    this.router.navigateByUrl('loop')
+  }
 }
