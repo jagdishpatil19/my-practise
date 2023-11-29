@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,5 +16,25 @@ this.router.navigateByUrl("login")
   }
   loop(){
     this.router.navigateByUrl('loop')
+  }
+  style(){
+    this.router.navigateByUrl('styleBinding')
+  }
+  form(){
+    this.router.navigateByUrl('loginForm')
+  }
+  toggle(){
+    this.router.navigateByUrl('toggle')
+  }
+  todo(){
+    this.router.navigateByUrl('todoList')
+  }
+
+  child:any='10'
+  update(){
+    this.child=Math.floor(Math.random()*10)+2
+  }
+  updateChild(){
+    
   }
 }

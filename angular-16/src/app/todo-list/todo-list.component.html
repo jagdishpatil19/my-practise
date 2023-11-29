@@ -1,0 +1,8 @@
+<p>todo-list works!</p>
+<input type="text" #todoItem  placeholder="enter your task"> 
+<button  (click)="addTask(todoItem.value)">add task</button>
+
+<ul *ngFor="let item of taskList">
+    <li *ngIf="todoItem.value==''">plise enter task</li>
+    <li  *ngIf="todoItem.value!==''">{{item.name}}</li>
+</ul>

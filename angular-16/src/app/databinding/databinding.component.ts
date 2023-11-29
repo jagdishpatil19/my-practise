@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class DatabindingComponent {
 name:string=''
-newName:string=''
-fullName(value:string){
-this.newName=value
-}
+// newName:string=''
+// fullName(value:string){
+// this.newName=value
+// }
  
 fname:string=''
 myName(val:string){

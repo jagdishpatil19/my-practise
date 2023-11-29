@@ -10,6 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { OtherPractiseComponent } from './other-practise/other-practise.component';
 import { IfElseComponent } from './if-else/if-else.component';
 import { LoopsComponent } from './loops/loops.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { ToggleComponent } from './toggle/toggle.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { ChildParentComponent } from './child-parent/child-parent.component';
  
 
 @NgModule({
@@ -21,6 +25,10 @@ import { LoopsComponent } from './loops/loops.component';
     OtherPractiseComponent,
     IfElseComponent,
     LoopsComponent,
+    StyleBindingComponent,
+    ToggleComponent,
+    TodoListComponent,
+    ChildParentComponent,
    
   ],
   imports: [

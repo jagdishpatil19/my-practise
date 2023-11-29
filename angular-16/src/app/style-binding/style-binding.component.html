@@ -1,0 +1,8 @@
+<p>style-binding works!</p>
+
+
+<input type="text" #selectColor (input)="selectColor.value" placeholder="select color" >
+<button (click)="select(selectColor.value)">enter</button>
+ 
+ 
+<h1 [style.color]="color">color change</h1>
