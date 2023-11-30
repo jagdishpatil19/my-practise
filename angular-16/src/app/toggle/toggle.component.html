@@ -1,6 +1,6 @@
 <p>toggle works!</p>
-<input type="checkbox"  (click)="hideShow()">
-<button (click)="hideShow()">click</button>
-<h1 *ngIf="display">
+<input type="checkbox"  (click)="hideShow(display)">
+<button (click)="hideShow(display)" >{{btn}}</button>
+<h1 *ngIf="display" #id>
     this hide or show
 </h1>

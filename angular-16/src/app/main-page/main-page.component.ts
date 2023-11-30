@@ -11,6 +11,25 @@ constructor(private router:Router){}
   login(){
 this.router.navigateByUrl("login")
   }
+
+  sms:any;
+  submit(value:any){
+if(value==30){
+  this.router.navigateByUrl('ifElse')
+}
+   else if(value==''){
+  this.sms="plise enter number"
+  setTimeout(()=>{
+ this.sms=''
+  },2000)
+ }
+else{
+  this.sms="plise enter valide number"
+  setTimeout(()=>{
+    this.sms=''
+     },2000)
+}
+  }
   ifElse(){
     this.router.navigateByUrl('ifElse')
   }
@@ -34,7 +53,7 @@ this.router.navigateByUrl("login")
   update(){
     this.child=Math.floor(Math.random()*10)+2
   }
-  updateChild(){
-    
+  pipes(){
+    this.router.navigateByUrl('pipes')
   }
 }

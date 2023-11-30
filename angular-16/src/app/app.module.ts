@@ -14,6 +14,7 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
+import { PipesComponent } from './pipes/pipes.component';
  
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ChildParentComponent } from './child-parent/child-parent.component';
     ToggleComponent,
     TodoListComponent,
     ChildParentComponent,
+    PipesComponent,
    
   ],
   imports: [

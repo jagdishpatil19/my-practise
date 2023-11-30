@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ToggleComponent {
 display:boolean=false
+btn:string='show'
 
-hideShow(){
+hideShow(value:boolean){
 this.display=!this.display
+if(value==true){
+this.btn="show"
+}
+else{
+  this.btn='hide'
+}
 }
 }
