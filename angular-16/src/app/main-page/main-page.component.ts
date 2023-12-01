@@ -56,4 +56,7 @@ else{
   pipes(){
     this.router.navigateByUrl('pipes')
   }
+  newForm(){
+    this.router.navigateByUrl('newForm')
+  }
 }

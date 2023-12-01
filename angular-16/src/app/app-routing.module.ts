@@ -9,6 +9,7 @@ import { LoginFormComponent } from './form/login-form/login-form.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { NewFormComponent } from './new-form/new-form.component';
  
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
    {path:'loginForm',component:LoginFormComponent},
    {path:'toggle',component:ToggleComponent},
    {path:'todoList',component: TodoListComponent},
-   {path:'pipes',component:  PipesComponent}
+   {path:'pipes',component:  PipesComponent},
+   {path:'newForm',component: NewFormComponent}
  
 ];
 

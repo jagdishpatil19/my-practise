@@ -15,6 +15,7 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { NewFormComponent } from './new-form/new-form.component';
  
 
 @NgModule({
@@ -31,6 +32,7 @@ import { PipesComponent } from './pipes/pipes.component';
     TodoListComponent,
     ChildParentComponent,
     PipesComponent,
+    NewFormComponent,
    
   ],
   imports: [

@@ -1,0 +1,11 @@
+<p>new-form works!</p>
+<form #simpleForm="ngForm" (ngSubmit)="userData(simpleForm.value)" >
+<input type="text" name="user"  required #name="ngModel"  placeholder="enter user name" ngModel>
+<br><span *ngIf="name.invalid && name.touched">plise inter valid name</span><br >
+<input type="password" name="password" placeholder="enter password" ngModel>
+<br><br>
+<button type="submit">register</button>
+
+
+</form>
+ 
