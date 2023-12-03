@@ -1,0 +1,17 @@
+<p>reactive-form works!</p>
+
+<form [formGroup]="loginform" (ngSubmit)="userLogin()">
+  <input type="email" placeholder="enter user name " formControlName="user" />
+  <br />
+  <span *ngIf="user?.invalid && user?.touched">plise enetr valid user name</span
+  ><br />
+  <input
+    type="password"
+    placeholder="enter password"
+    formControlName="password"
+  />
+  <br /><span *ngIf="password?.invalid && password?.touched"
+    >plise enter correct password</span
+  ><br />
+  <button [disabled]="loginform.invalid">register</button>
+</form>

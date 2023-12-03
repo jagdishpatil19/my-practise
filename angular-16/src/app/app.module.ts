@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LoginComponent } from './login/login.component';
 import { DatabindingComponent } from './databinding/databinding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OtherPractiseComponent } from './other-practise/other-practise.component';
 import { IfElseComponent } from './if-else/if-else.component';
 import { LoopsComponent } from './loops/loops.component';
@@ -16,6 +16,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { ChildParentComponent } from './child-parent/child-parent.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { NewFormComponent } from './new-form/new-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
  
 
 @NgModule({
@@ -33,12 +35,15 @@ import { NewFormComponent } from './new-form/new-form.component';
     ChildParentComponent,
     PipesComponent,
     NewFormComponent,
+    ReactiveFormComponent,
+    ErrorPageComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

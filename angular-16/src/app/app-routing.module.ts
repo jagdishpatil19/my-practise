@@ -10,6 +10,8 @@ import { ToggleComponent } from './toggle/toggle.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { NewFormComponent } from './new-form/new-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
  
 
 const routes: Routes = [
@@ -22,8 +24,9 @@ const routes: Routes = [
    {path:'toggle',component:ToggleComponent},
    {path:'todoList',component: TodoListComponent},
    {path:'pipes',component:  PipesComponent},
-   {path:'newForm',component: NewFormComponent}
- 
+   {path:'newForm',component: NewFormComponent},
+   {path:'reactiveForm',component: ReactiveFormComponent},
+   {path:'**',component:ErrorPageComponent},
 ];
 
 @NgModule({

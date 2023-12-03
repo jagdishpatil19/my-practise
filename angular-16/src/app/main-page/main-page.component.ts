@@ -59,4 +59,7 @@ else{
   newForm(){
     this.router.navigateByUrl('newForm')
   }
+  reactiveForm(){
+    this.router.navigateByUrl('reactiveForm')
+  }
 }
