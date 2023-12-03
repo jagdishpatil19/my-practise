@@ -62,4 +62,7 @@ else{
   reactiveForm(){
     this.router.navigateByUrl('reactiveForm')
   }
+  services(){
+    this.router.navigateByUrl('services')
+  }
 }

@@ -18,6 +18,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { StudentDtatInServiceComponent } from './student-dtat-in-service/student-dtat-in-service.component';
  
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     NewFormComponent,
     ReactiveFormComponent,
     ErrorPageComponent,
+    StudentDtatInServiceComponent,
    
   ],
   imports: [
