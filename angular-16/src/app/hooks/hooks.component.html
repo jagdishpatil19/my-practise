@@ -1,8 +1,15 @@
 <p>hooks works!</p>
-<a routerLink="/hookChild">About</a>
+<div >
+    <a routerLink="/hookChild">About</a>
 <br>
 <input type="text" name="" placeholder="enter your name" #name>
 <button (click)="submitValue(name)" >click</button>
-<app-hooks-child [myValue]="value"></app-hooks-child>
+<app-hooks-child *ngIf="hide" [myValue]="value"></app-hooks-child>
+
+</div>
+<hr><hr>
+<h3>life cycle hooks</h3>
+
+<button (click)="destroy( )" style="color: red;">destroy component</button>
 
  
