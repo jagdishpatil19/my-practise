@@ -68,4 +68,7 @@ else{
   apiCall(){
     this.router.navigateByUrl('api')
   }
+  hooks(){
+    this.router.navigateByUrl('hooks')
+  }
 }

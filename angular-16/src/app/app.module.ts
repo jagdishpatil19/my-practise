@@ -20,7 +20,9 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { StudentDtatInServiceComponent } from './student-dtat-in-service/student-dtat-in-service.component';
 import { APICallComponent } from './api-call/api-call.component';
-import{HttpClientModule}from '@angular/common/http'
+import{HttpClientModule}from '@angular/common/http';
+import { HooksComponent } from './hooks/hooks.component';
+import { HooksChildComponent } from './hooks-child/hooks-child.component'
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import{HttpClientModule}from '@angular/common/http'
     ErrorPageComponent,
     StudentDtatInServiceComponent,
     APICallComponent,
+    HooksComponent,
+    HooksChildComponent,
    
   ],
   imports: [
