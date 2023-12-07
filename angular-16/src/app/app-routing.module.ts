@@ -13,6 +13,7 @@ import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { StudentDtatInServiceComponent } from './student-dtat-in-service/student-dtat-in-service.component';
+import { APICallComponent } from './api-call/api-call.component';
  
 
 const routes: Routes = [
@@ -29,6 +30,8 @@ const routes: Routes = [
    {path:'reactiveForm',component: ReactiveFormComponent},
    {path:'reactiveForm',component: ReactiveFormComponent},
    {path:'services',component:StudentDtatInServiceComponent},
+   {path:'api',component:APICallComponent},
+   {path:'**',component:ErrorPageComponent}
 ];
 
 @NgModule({

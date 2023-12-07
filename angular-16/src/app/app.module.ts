@@ -19,7 +19,8 @@ import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { StudentDtatInServiceComponent } from './student-dtat-in-service/student-dtat-in-service.component';
- 
+import { APICallComponent } from './api-call/api-call.component';
+import{HttpClientModule}from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -39,13 +40,15 @@ import { StudentDtatInServiceComponent } from './student-dtat-in-service/student
     ReactiveFormComponent,
     ErrorPageComponent,
     StudentDtatInServiceComponent,
+    APICallComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

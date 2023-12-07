@@ -65,4 +65,7 @@ else{
   services(){
     this.router.navigateByUrl('services')
   }
+  apiCall(){
+    this.router.navigateByUrl('api')
+  }
 }
