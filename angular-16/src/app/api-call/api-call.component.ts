@@ -11,9 +11,19 @@ export class APICallComponent {
 user:any;
 constructor(private data:APICallService) {
   data.getData().subscribe((userdata)=>{
+   console.log(userdata)
     this.user=userdata
   })
   
 }
+
+submit(data:any){
+ 
+  this.data.postData(data).subscribe((result)=>{
+    console.log(result)
+  })
+}
+
+ 
 
 }

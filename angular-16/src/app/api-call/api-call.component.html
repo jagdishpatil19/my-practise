@@ -1,4 +1,16 @@
 <p>api-call works!</p>
- <ul>
+ <!-- <ul>
     <li *ngFor="let p of user">{{p.id}}</li>
- </ul> 
+ </ul>  -->
+
+ <form #postApi="ngForm" (ngSubmit)="submit(postApi.value)">
+   <input type="text" name="body" placeholder="enter body data" required #body="ngModel" ngModel>
+   <br>
+   <input type="text" name="user id" placeholder="enter user id" required #body="ngModel"  ngModel>
+   <br>
+   <input type="text" name="title" placeholder="enter the title" required #body="ngModel"  ngModel>
+   <br>
+    
+   <br>
+   <button [disabled]="postApi.invalid">submit</button>
+ </form>

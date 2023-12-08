@@ -13,4 +13,9 @@ return this.http.get(this.url)
   
 
   }
+  postData(postData:any){
+return this.http.post(this.url,postData)
+  
+
+  }
 }
