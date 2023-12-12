@@ -1,0 +1,9 @@
+<p>sub works!</p>
+<input type="text" #user >
+<button (click)="button(user.value)">click</button>
+<div>{{sub}}</div>
+<hr><hr>
+<app-sub1 [reciveData]="sub"></app-sub1>
+
+<hr><hr>
+<app-sub2 [reciveData]="sub" ></app-sub2>

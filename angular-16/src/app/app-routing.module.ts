@@ -16,6 +16,11 @@ import { StudentDtatInServiceComponent } from './student-dtat-in-service/student
 import { APICallComponent } from './api-call/api-call.component';
 import { HooksComponent } from './hooks/hooks.component';
 import { HooksChildComponent } from './hooks-child/hooks-child.component';
+import { ModelComponent } from './model/model.component';
+import { AddingServiceDataComponent } from './adding-service-data/adding-service-data.component';
+import { ParentComponent } from './parent/parent.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { SubComponent } from './sub/sub.component';
  
 
 const routes: Routes = [
@@ -35,7 +40,12 @@ const routes: Routes = [
    {path:'api',component:APICallComponent},
    {path:'hooks',component:HooksComponent},
    {path:'hookChild',component:HooksChildComponent},
-   {path:'**',component:ErrorPageComponent}
+   {path:'model',component:ModelComponent},
+   {path:'model',component:ModelComponent},
+   {path:'addServiceData',component: AddingServiceDataComponent},
+   {path:'parentChild',component:ParentComponent},
+   {path:'subject',component:SubComponent},
+   {path:"**",component:ErrorPageComponent}
 ];
 
 @NgModule({

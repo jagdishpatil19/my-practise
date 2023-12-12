@@ -17,12 +17,17 @@ constructor(private data:APICallService) {
   
 }
 
+newUser:any;
 submit(data:any){
  
   this.data.postData(data).subscribe((result)=>{
-    console.log(result)
+  console.log(result)
+    this.newUser=result
   })
+  
 }
+
+ 
 
  
 

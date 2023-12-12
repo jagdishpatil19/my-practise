@@ -22,7 +22,13 @@ import { StudentDtatInServiceComponent } from './student-dtat-in-service/student
 import { APICallComponent } from './api-call/api-call.component';
 import{HttpClientModule}from '@angular/common/http';
 import { HooksComponent } from './hooks/hooks.component';
-import { HooksChildComponent } from './hooks-child/hooks-child.component'
+import { HooksChildComponent } from './hooks-child/hooks-child.component';
+import { ModelComponent } from './model/model.component';
+import { AddingServiceDataComponent } from './adding-service-data/adding-service-data.component';
+import { ParentComponent } from './parent/parent.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { Sub2Component } from './sub2/sub2.component';
+import { SubComponent } from './sub/sub.component'
 
 @NgModule({
   declarations: [
@@ -45,6 +51,12 @@ import { HooksChildComponent } from './hooks-child/hooks-child.component'
     APICallComponent,
     HooksComponent,
     HooksChildComponent,
+    ModelComponent,
+    AddingServiceDataComponent,
+    ParentComponent,
+    Sub1Component,
+    Sub2Component,
+    SubComponent,
    
   ],
   imports: [

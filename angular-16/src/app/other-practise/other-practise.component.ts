@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StudentService } from '../services/student.service';
 
 @Component({
   selector: 'app-other-practise',
@@ -13,5 +14,12 @@ export class OtherPractiseComponent {
   }
   substraction(){
     this.num1--
+  }
+
+
+  myName:any='jagdish pundlik patil'
+  constructor(private std:StudentService) {}
+  ngOnInit(){
+    this.std.fullName=this.myName
   }
 }

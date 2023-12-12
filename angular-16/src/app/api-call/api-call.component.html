@@ -1,7 +1,5 @@
 <p>api-call works!</p>
- <!-- <ul>
-    <li *ngFor="let p of user">{{p.id}}</li>
- </ul>  -->
+ 
 
  <form #postApi="ngForm" (ngSubmit)="submit(postApi.value)">
    <input type="text" name="body" placeholder="enter body data" required #body="ngModel" ngModel>
@@ -14,3 +12,8 @@
    <br>
    <button [disabled]="postApi.invalid">submit</button>
  </form>
+  
+ <ul>
+    <li *ngFor="let p of user">{{p.id}}</li>
+     
+ </ul> 

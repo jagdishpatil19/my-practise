@@ -71,4 +71,14 @@ else{
   hooks(){
     this.router.navigateByUrl('hooks')
   }
+  model(){
+    this.router.navigateByUrl('model')
+  }
+  addServiceData(){
+    this.router.navigateByUrl('addServiceData')
+  }
+  parentChild(){
+    this.router.navigateByUrl('parentChild')
+  }
+   
 }
