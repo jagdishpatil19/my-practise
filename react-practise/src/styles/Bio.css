@@ -1,0 +1,19 @@
+.bioPage{
+    display: flex;
+   justify-content: space-around;
+    width: 1100px;
+    position: relative;
+    top: -10px;
+    left: 90px;
+}
+
+.bioData{
+    background-color: aliceblue;
+    height: 500px;
+    width: 600px;
+    margin-left: 200px;
+}
+.range input{
+    margin-left: 10px;
+    width:300px ;
+}

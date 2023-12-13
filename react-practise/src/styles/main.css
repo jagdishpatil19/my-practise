@@ -1,0 +1,18 @@
+.image1{
+    
+    background-image: url('https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    height:90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+}
+
+h3{
+   color: white; 
+   font-size: 40px;
+   padding-top: 60px; 
+   padding-left: 120px;
+}

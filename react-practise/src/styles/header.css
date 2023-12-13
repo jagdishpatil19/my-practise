@@ -1,0 +1,15 @@
+.header{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.767);
+    margin-top: 25px;
+    position:sticky;
+    top: 5px; 
+}
+ ul.header li:hover{
+    color: white;
+   
+}

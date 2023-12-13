@@ -1,11 +1,15 @@
- 
+ import './styles/app.css'
+import Header from "./componants/header";
+ import Main from "./componants/main";
+ import Bio from './componants/Bio';
 
 function App() {
   return (
-     <div>
-<h1>this is my project</h1>
-
-<img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height={500}/>
+     <div className="app">
+ 
+<Header/>
+ <Main/>
+ <Bio/>
      </div>
   );
 }
