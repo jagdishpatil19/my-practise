@@ -4,7 +4,7 @@ import React from 'react'
 const Bio = () => {
   return (
     <div className='bioPage'>
-      <img src="https://images.pexels.com/photos/12003795/pexels-photo-12003795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" height={500} width={500} alt="bio image" />
+      <img src="https://images.pexels.com/photos/12003795/pexels-photo-12003795.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" height={500} width={500} alt='imges' />
       
       <div className="bioData">
         <h1>MY BIO</h1>
@@ -21,8 +21,14 @@ Here’s everything you need to know about Instagram bios, and how to write one 
   <li> 13 Instagram bio tricks you may not know about</li>
   <li>Instagram bio templates</li>
  </ul>
+
+ Creativity
+Caffeine
+Exercise
+Honesty
+Laughter
  <div className="range">
- <input type="range" name="" id="" /><br />
+ <input type="range" name="" id=""  min={0} max={100} /><br />
  <input type="range" name="" id="" /><br />
  <input type="range" name="" id="" /><br />
  <input type="range" name="" id="" />

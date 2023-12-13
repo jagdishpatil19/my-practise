@@ -5,10 +5,11 @@
     position: relative;
     top: -10px;
     left: 90px;
+    color: white;
 }
 
 .bioData{
-    background-color: aliceblue;
+    
     height: 500px;
     width: 600px;
     margin-left: 200px;
