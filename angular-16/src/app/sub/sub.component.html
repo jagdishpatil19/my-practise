@@ -1,8 +1,12 @@
 <p>sub works!</p>
-<input type="text" #user >
+<input type="text" #user  placeholder="enter parent to child data send">
 <button (click)="button(user.value)">click</button>
 <div>{{sub}}</div>
 <hr><hr>
+
+
+<input type="text" placeholder="enter subject data" [(ngModel)]="subject"   (blur)="setData()">
+<button (click)="setData()">subject</button>
 <app-sub1 [reciveData]="sub"></app-sub1>
 
 <hr><hr>

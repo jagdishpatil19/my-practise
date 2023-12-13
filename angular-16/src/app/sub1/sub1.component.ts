@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { StudentService } from '../services/student.service';
  
 
 @Component({
@@ -9,7 +10,16 @@ import { Component, Input } from '@angular/core';
 export class Sub1Component {
    
 @Input() reciveData=''
-   
+ 
+
+constructor(private std:StudentService){}
+subjectData:any;
+ ngOnInit(){
+  this.std.userName.subscribe(data=>{
+ 
+    this.subjectData=data
+  }) 
+ }
   
  
  

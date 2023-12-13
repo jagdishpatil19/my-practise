@@ -22,6 +22,6 @@ export class StudentService {
 
 
   //subject data 
-  userName:any=new Subject<any>()
+ userName=new Subject<any>()
    
 }

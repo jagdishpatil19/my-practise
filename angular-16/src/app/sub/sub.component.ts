@@ -16,5 +16,15 @@ this.sub=value
  
  }
 
+ constructor(private std:StudentService){}
+ subject:any='jagdish'
  
+ ngOnInit(){
+
+ }
+ setData(){
+ this.std.userName.next(this.subject)
+ }
+
+  
 }
