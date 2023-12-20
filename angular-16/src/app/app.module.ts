@@ -28,7 +28,10 @@ import { AddingServiceDataComponent } from './adding-service-data/adding-service
 import { ParentComponent } from './parent/parent.component';
 import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
-import { SubComponent } from './sub/sub.component'
+import { SubComponent } from './sub/sub.component';
+import { FirstPipe } from './all-pipes/first.pipe';
+import { SearchPipe } from './all-pipes/search.pipe';
+import { TodoChildComponent } from './todo-child/todo-child.component'
 
 @NgModule({
   declarations: [
@@ -57,6 +60,9 @@ import { SubComponent } from './sub/sub.component'
     Sub1Component,
     Sub2Component,
     SubComponent,
+    FirstPipe,
+    SearchPipe,
+    TodoChildComponent,
    
   ],
   imports: [

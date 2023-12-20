@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./new-form.component.css']
 })
 export class NewFormComponent {
+  inputData=''
 userData(value:any){
 console.log(value)
+this.inputData=value
+
 }
 }

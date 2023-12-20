@@ -1,0 +1,10 @@
+ <div class="mainDiv">
+<div *ngIf="del">
+    <div  class="lineDiv" *ngFor="let data of task" >
+        {{data}} <button (click)="delet()">del</button>
+          
+       </div>
+</div>
+<br><br>
+<button (click)="pushData()">add</button>
+ </div>

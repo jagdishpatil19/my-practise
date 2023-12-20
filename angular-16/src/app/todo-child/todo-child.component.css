@@ -1,0 +1,13 @@
+.mainDiv{
+    background-color: cornflowerblue;
+    height: 400px;
+    width: 400px;
+}
+.lineDiv{
+    background-color: white;
+     position: relative;
+     top: 15px;
+     left: 10px;
+     margin-top: 10px;
+    width: 380px;
+}

@@ -18,13 +18,16 @@
     name="password"
     required
     pattern="[A-Z]{3}[0-9]{2}"
-    #password="ngModel"
+    #pass="ngModel"
     placeholder="enter password"
     ngModel
   />
   
-  <br /><span *ngIf="password.invalid && password.touched" style="color: red"
+  <br /><span *ngIf="pass.invalid && pass.touched" style="color: red"
     >plise enetr 3 capitle and 2 no. password</span
   ><br />
   <button [disabled]="simpleForm.invalid">register</button>
 </form>
+
+
+<h3>{{inputData}}</h3>

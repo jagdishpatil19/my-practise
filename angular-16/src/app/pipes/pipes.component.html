@@ -6,3 +6,29 @@
 <h3>{{20|currency:'INR'}}</h3>
 <h3>{{'this is my name' | uppercase}}</h3>
 
+
+<hr><hr>
+<!-- custome pipes create -->
+
+<h1>this is custom pipe create</h1>
+
+<h3>custome pipe <i>{{custom | first:70}}</i></h3>
+
+<hr><hr>
+<!-- custom pipe example  search pipe using this method-->
+
+<input type="search" [(ngModel)]="serachData"> 
+ 
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>phone No</th>
+    </tr>
+    <tr *ngFor="let data of studentData |search:serachData " >
+        <td>{{data.name }}</td>
+        <td>{{data.age}}</td>
+        <td>{{data.phoneNo}}</td>
+    </tr>
+</table>

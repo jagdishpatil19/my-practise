@@ -9,7 +9,7 @@ export class ChildParentComponent {
   @Input() item:any;
    myName:string="jagdish"
 
-   //data transformation....child to pret or parent to  child
+   //data transformation....  parent to  child
    @Input() parentDataRecive:any;
 
    //child data transfor in parent componant 

@@ -6,3 +6,8 @@
     <li *ngIf="todoItem.value==''">plise enter task</li>
     <li  *ngIf="todoItem.value!==''">{{item.name}}</li>
 </ul>
+<br><br><br>
+<hr><hr>
+<p></p>
+
+<app-todo-child [getData]="todoItem.value" ></app-todo-child>
