@@ -6,10 +6,10 @@
   <span *ngIf="user?.invalid && user?.touched">plise enetr valid user name</span
   ><br />
   <input
-    type="password"
+  [type]="inputType"
     placeholder="enter password"
     formControlName="password"
-  />
+  />  <i [className]="icons" (click)="showPassword()"></i>
   <br /><span *ngIf="password?.invalid && password?.touched"
     >plise enter correct password</span
   ><br />

@@ -24,9 +24,19 @@ get password(){
   return this.loginform.get('password')
 }
 
+ icons:any="bi bi-eye-slash"
+inputType:any="password"
 
-
-
+ showPassword(){
+  if(this.icons=="bi bi-eye-slash"){
+ this.icons="bi bi-eye"
+ this.inputType="text"
+  }
+  else if(this.icons=="bi bi-eye"){
+this.icons="bi bi-eye-slash"
+this.inputType="password"
+  }
+ }
 }
 
 
