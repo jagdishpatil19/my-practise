@@ -1,17 +1,37 @@
 import React from 'react'
-import SingleTask from './SingleTask'
+ 
+ 
+  
 
-const InputBox = () => {
+const InputBox = ({setInput}) => {
+
+ let input;
+  
+ 
+  function getData(val){
+     
+      input=val.target.value
+  
+    
+
+  
+  }
+   
+  function addData(){
+    setInput(input)
+
+  }
   return (
     <div>
-        <input style={{marginTop:20,marginLeft:50}} />
-        <button>Add</button>
-        <SingleTask task='going to Gym'/>
-        <SingleTask task='daily read some books' />
-        <SingleTask task='anything'/>
-        <SingleTask task='playning a game'/>
+      
+        <input style={{marginTop:20,marginLeft:50}} onChange={getData}/>
+        <button onClick={addData} >Add</button>
+
+     
     </div>
+ 
   )
+
 }
 
 export default InputBox

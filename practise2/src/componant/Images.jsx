@@ -10,7 +10,7 @@ const Images = () => {
   return (
      <div>
       
-
+   
            {arr.map( (ele)=>{
             return <img src={ele} alt="images" height={400} width={400} />
            })}
