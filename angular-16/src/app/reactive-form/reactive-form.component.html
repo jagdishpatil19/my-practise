@@ -1,17 +1,21 @@
 <p>reactive-form works!</p>
 
-<form [formGroup]="loginform" (ngSubmit)="userLogin()">
+<form [formGroup]="loginForm"  (ngSubmit)="userLogin()"> 
   <input type="email" placeholder="enter user name " formControlName="user" />
   <br />
-  <span *ngIf="user?.invalid && user?.touched">plise enetr valid user name</span
-  ><br />
+  <!-- <span *ngIf="user?.invalid && user?.touched">plise enetr valid user name</span -->
+  <br />
   <input
   [type]="inputType"
     placeholder="enter password"
     formControlName="password"
-  />  <i [className]="icons" (click)="showPassword()"></i>
-  <br /><span *ngIf="password?.invalid && password?.touched"
-    >plise enter correct password</span
-  ><br />
-  <button [disabled]="loginform.invalid">register</button>
+    (keyup)="checkPassword()"
+  />  <i [className]="icons" (click)="showPassword()"></i><br><br>
+  <input type="password" placeholder="confirm password" formControlName="confirmPassword" (keyup)="checkPassword()">
+  <span *ngIf="passMissMatch">password not match</span>
+  <!-- <br /><span *ngIf="password?.invalid && password?.touched" -->
+    <!-- >plise enter correct password</span -->
+  <br />
+  <input type="text" formControlName="city" placeholder="enter city">city
+  <button [disabled]='loginForm.invalid'>register</button>
 </form>
