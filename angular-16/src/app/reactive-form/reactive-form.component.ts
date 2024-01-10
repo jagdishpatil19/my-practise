@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{FormControl , FormControlName, FormGroup ,Validator, Validators}from '@angular/forms'
+import{FormBuilder, FormControl , FormControlName, FormGroup ,Validator, Validators}from '@angular/forms'
 
 @Component({
   selector: 'app-reactive-form',
@@ -7,23 +7,32 @@ import{FormControl , FormControlName, FormGroup ,Validator, Validators}from '@an
   styleUrls: ['./reactive-form.component.css']
 })
 export class ReactiveFormComponent {
-loginform=new FormGroup({
- user:new FormControl('',[Validators.required ,Validators.email]),
- password:new FormControl('',[Validators.required]) 
+ 
+  loginForm!:FormGroup
 
-})
-userLogin(){
-  console.log(this.loginform.value)
-}
+  constructor(private formbuilder:FormBuilder){}
 
-get user(){
-  return this.loginform.get('user')
-}
+  ngOnInit(){
+    this.formLoad()
+  }
+ formLoad(){
+  this.loginForm=this.formbuilder.group({
+    // user:['',[Validators.required ,Validators.email]],
+//  password: ['',[Validators.required]] ,
+// city:['']
+ 
+      user: [989898989,[Validators.maxLength(10)]],
+       password:['',[Validators.pattern('^[A-Z]{5}[0-9]{4}[A-Z]{1}$'),Validators.maxLength(10)],],
+       confirmPassword:[''],
+       
+      city:["",[this.spacesNotAllowed]]
+  })
+ }
+ 
 
-get password(){
-  return this.loginform.get('password')
-}
+ userLogin(){
 
+ }
  icons:any="bi bi-eye-slash"
 inputType:any="password"
 
@@ -37,6 +46,25 @@ this.icons="bi bi-eye-slash"
 this.inputType="password"
   }
  }
+ cityData:any=''
+ spacesNotAllowed(control:any){
+  //  this.cityData=control.value
+  const value=control.value
+   console.log(value)
+    
+ }
+ passMissMatch:boolean=false
+checkPassword(){
+let pass=this.loginForm.get('password')?.value
+let confirmPass=this.loginForm.get('confirmPassword')?.value
+ console.log(pass,"this is pass")
+ console.log(confirmPass,"this is confirm pass")
+ if(pass!==confirmPass){
+  this.passMissMatch=true
+ }
+ else{
+  this.passMissMatch=false
+ }
 }
 
-
+}
