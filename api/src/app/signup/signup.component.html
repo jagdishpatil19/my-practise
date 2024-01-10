@@ -1,0 +1,15 @@
+ <h1>Sign Up</h1>
+
+
+ <form [formGroup]="signup" (ngSubmit)="userData()">
+    <label>name</label><br>
+    <input type="text" placeholder="enter your name" formControlName="userName"><br><br>
+    <label>number</label><br>
+    <input type="text" placeholder="enter your mobile number"formControlName='MobileNo' ><br><br>
+    <label>password</label><br>
+    <input [type]="changeType" placeholder="enter password" formControlName='password'><i (click)="passwordHideShow()" [class]="icon"></i><br><br>
+    <label>confirm password</label><br>
+    <input type="password" placeholder="confirm password" formControlName='confirmPassword'><br><br>
+    <button>submit</button>
+ </form>
+ 
