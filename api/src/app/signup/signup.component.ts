@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { ReactiveFormsModule,FormControl,FormGroup,FormBuilder, RequiredValidator, Validators } from '@angular/forms';
+import { ApiCallService } from '../services/api-call.service';
 
 @Component({
   selector: 'app-signup',
@@ -9,7 +10,7 @@ import { ReactiveFormsModule,FormControl,FormGroup,FormBuilder, RequiredValidato
 })
 export class SignupComponent {
 signup!:FormGroup
-constructor(private formBuilder:FormBuilder){}
+constructor(private formBuilder:FormBuilder,private apiCallSerice:ApiCallService){}
 ngOnInit(){
 this.formLoad()
 
@@ -24,8 +25,13 @@ formLoad(){
   })
   
 }
-userData(){
+submit(){
+    let endPoint="user"
    console.log(this.signup.value)
+   this.apiCallSerice.postApi(endPoint,this.signup.value).subscribe(result=>{
+    console.log(result)
+   })
+    
 }
 changeType='password'
 icon='bi bi-eye-fill'
