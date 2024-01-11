@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule,FormControl,FormGroup,FormBuilder, RequiredValidator, Validators } from '@angular/forms';
 import { ApiCallService } from '../services/api-call.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,7 @@ import { ApiCallService } from '../services/api-call.service';
 })
 export class SignupComponent {
 signup!:FormGroup
-constructor(private formBuilder:FormBuilder,private apiCallSerice:ApiCallService){}
+constructor(private formBuilder:FormBuilder,private apiCallSerice:ApiCallService ,private router:Router){}
 ngOnInit(){
 this.formLoad()
 
@@ -25,13 +26,47 @@ formLoad(){
   })
   
 }
-submit(){
-    let endPoint="user"
-   console.log(this.signup.value)
-   this.apiCallSerice.postApi(endPoint,this.signup.value).subscribe(result=>{
-    console.log(result)
-   })
+confirmPasswordError:boolean=false
+
+passwordCheck(){
+  let pass=this.signup.get("password")?.value
+  console.log(pass)
+  let confirmpass=this.signup.get("confirmPassword")?.value
+
+  if(pass!==confirmpass){
+  this.confirmPasswordError=true
+  }
+  else{
+    this.confirmPasswordError=false
+  }
+}
+postApiResponse:any=""
+//first way to post API
+
+// submit(){
+//     let endPoint="user"
+//    console.log(this.signup.value)
+//    this.apiCallSerice.postApi(endPoint,this.signup.value).subscribe(result=>{
+//     console.log(result)
+//    })
+   
+
+//second way to post API
+   async submit(){
+    let endPoint='user';
+    console.log( this.signup.value);
+   this.postApiResponse = await this.apiCallSerice.postApi(endPoint,this.signup.value).toPromise()
     
+
+
+   if(this.postApiResponse?.id){
+    this.router.navigateByUrl('home')
+   }
+
+   else{
+    this.router.navigateByUrl("signUp")
+   }
+ 
 }
 changeType='password'
 icon='bi bi-eye-fill'
@@ -45,4 +80,8 @@ passwordHideShow(){
     this.icon="bi bi-eye-fill"
   }
 }
+
+
+
+
 }

@@ -7,9 +7,11 @@
     <label>number</label><br>
     <input type="text" placeholder="enter your mobile number"formControlName='MobileNo' ><br><br>
     <label>password</label><br>
-    <input [type]="changeType" placeholder="enter password" formControlName='password'><i (click)="passwordHideShow()" [class]="icon"></i><br><br>
+    <input [type]="changeType" placeholder="enter password" formControlName='password' (keyup)="passwordCheck()"><i (click)="passwordHideShow()" [class]="icon"></i><br><br>
     <label>confirm password</label><br>
-    <input type="password" placeholder="confirm password" formControlName='confirmPassword'><br><br>
+    <input type="password" placeholder="confirm password" formControlName='confirmPassword' (keyup)="passwordCheck()">
+    <span *ngIf="confirmPasswordError">please enter correct password</span>
+    <br><br>
     <button>submit</button>
  </form>
  

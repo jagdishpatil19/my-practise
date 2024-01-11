@@ -1,33 +1,7 @@
 {
   "user": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "userName": "",
-      "password": "",
-      "MobileNo": "",
-      "confirmPassword": "",
-      "id": 2
-    },
-    {
-      "userName": "jagdish",
-      "password": "jjj",
-      "MobileNo": "98708-09",
-      "confirmPassword": "jjj",
-      "id": 3
-    }
+    
   ],
-  "admin": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "owner": {
-    "name": "typicode"
-  }
+  "admin": [],
+  "owner": []
 }

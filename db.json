@@ -1,0 +1,13 @@
+{
+  "user": [
+    {
+      "userName": "jagdish patil",
+      "password": "asdf",
+      "MobileNo": "8754869898",
+      "confirmPassword": "asdf",
+      "id": 1
+    }
+  ],
+  "admin": [],
+  "owner": []
+}
