@@ -20,7 +20,7 @@ export class ChildParentComponent {
 name:any='this is a kaypan'
     childTransforToParent(){
       this.data.emit(this.childToParent)
-      this.kayPan.emit(this.name)
+      this.kayPan.emit(this.name)   
     }
 
 }

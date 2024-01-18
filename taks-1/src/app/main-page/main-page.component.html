@@ -1,0 +1,16 @@
+<button (click)="test()">test</button>
+
+<button (click)="add()"> Add</button>
+<button (click)="remove()">remove</button>
+<div *ngFor="let data of array" class="circle" [style.backgroundColor]="addColor">{{data}}</div>
+ 
+<!-- <input type="text" #data (click)="adding(data)"> -->
+<h1>{{number}}</h1>
+<hr>
+<h4>number pramanae lavle</h4>
+<p>{{arr2}}</p>
+<hr>
+<h4>remove duplicate items in arra</h4>
+<p>duplicate {{removeDuplicateItem}}</p>
+<hr>
+<button routerLink="parent">parent</button>

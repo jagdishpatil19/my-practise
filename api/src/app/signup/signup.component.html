@@ -15,3 +15,24 @@
     <button>submit</button>
  </form>
  
+
+
+
+  <!-- <label>Password</label><br> -->
+  <input
+  class="allinput"
+  type="password"
+  placeholder="Set Your Password"
+  formControlName="password"
+  (keyup)="passwordHideShow()"
+/>
+<br /><br />
+<!-- <label> Confirm Password</label><br> -->
+<input
+  class="allinput"
+  type="password"
+  placeholder="Confirm Your Password"
+  formControlName="confirmPassword"
+  (keyup)="passwordHideShow()"
+/><br />
+<span *ngIf="confirmPasswordError">Plese enter correct password</span><br />
